@@ -1,0 +1,224 @@
+
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+
+
+/* - Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%) */
+
+/* Accent */
+
+/* - Blue: hsl(248, 32%, 49%) */
+
+/* Neutral */
+/* 
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%) */
+
+/* Typography */
+
+/* Body Copy */
+
+/* - Font size: 16px */
+
+/* Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+Weights: 400, 500, 600, 700 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url('bg-intro-desktop.png');
+    font-weight: 400;
+ }
+
+ .color-overlay {
+    position : absolute;
+    background: #dd3c3c;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.6;
+ }
+
+ main {
+    margin: auto;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 100;
+    padding-top: 120px;
+ }
+
+.div {
+    width: 45%;
+
+}
+
+.div1 {
+    margin-left: 0;
+    padding-left: 0;
+    color: white;
+}
+
+.div1 > h1 {
+    margin-bottom: 1.5rem;
+}
+
+.div1 > p {
+    font-size: 14px;
+    line-height: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.all {
+    display: flex;
+    justify-content: end;
+    letter-spacing: 2;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+}
+
+.all > p {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top : 0;
+    margin-bottom: 20px;
+    border: 1px white solid;
+    background : rgb(24, 91, 173);
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+    color: wheat;
+    opacity: 0.8;
+}
+
+p > span {
+    margin-left: 40px;
+}
+
+.div2 {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+input {
+    height: auto;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 4px;
+    width: 90%;
+    margin-left: 1.4rem;
+    font-weight: 600;
+}
+
+#fname {
+    margin-top: 12px;
+}
+
+button {
+    position: relative;
+    margin: 20px auto;
+    left: 40px;
+    padding: 12px;
+    width: 80%;
+    background-color: green;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+}
+
+.p2 {
+    font-size: 12px;
+    padding: 20px;
+    font-weight: 400;
+    color: #3a3434;
+}
+
+.p2 > a {
+    text-decoration: none;
+    color: #cd3131;
+}
+
+@media (max-width: 640px) and (min-width: 360px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-top: 16px;
+    }
+    .color-overlay {
+        margin-bottom: 0;
+        position: fixed
+    }
+
+    .div {
+        width: 80%;
+        margin: auto
+}
+
+.div1 > h1 {
+    margin-top: 1.5rem;
+}
+
+.div1 > p {
+    font-size: 14px;
+    line-height: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.all > p {
+    font-size: 14px;
+    padding: 8px;
+}
+
+.div2 {
+    margin-bottom: 12px;
+}
+
+input {
+    height: auto;
+    padding: 12px;
+    border-radius: 8px;
+    margin-left: 16px;
+    width: 90%;
+    font-weight: 600;
+}
+
+button {
+    position: relative;
+    left: 24px;
+    padding: 8px;
+}
+}
+
+
+@media (max-height: 640px) and (min-height: 320px) {
+    main{
+        padding-top: 10px;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .color-overlay {
+        position: fixed;
+    }
+}
